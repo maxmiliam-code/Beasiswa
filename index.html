@@ -1,19 +1,118 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Portofolio</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='bootstrap/css/bootstrap.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQyA8RKqlNUiu9fV7yUYlkHDf5A1kwFWYjGiXjyB2vSr37GW5AW" alt="">
-    <h1>Aplikasi pertama saya</h1>
-    <h2>Akan saya upload di github</h2>
-    <p>Nama saya Michael Oki Hartanto</p>
-    <br>
-    <p>Saya seorang pemula programmer</p>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Hasil Ujian</a>
+    </div>
+  </nav>
+
+  <div id="About">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div id="AboutData">
+            <div class="card bg-white">
+              <div class="card-tittle my-5">
+                <div class="media">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQyA8RKqlNUiu9fV7yUYlkHDf5A1kwFWYjGiXjyB2vSr37GW5AW" width="250" height="250" class="img-fluid rounded-top mx-5">
+                  <div class="media-body">
+                    <div class="container">
+                      <table class="table table-responsive ml-4">
+                        <tr>
+                          <td class="text-muted">Nama</td>
+                          <td>:</td>
+                          <td>Michael Oki Hartanto</td>
+                        </tr>
+                        <tr>
+                          <td class="text-muted">NIM</td>
+                          <td>:</td>
+                          <td>201701011</td>
+                        </tr>
+                        <tr>
+                          <td class="text-muted">Phone</td>
+                          <td>:</td>
+                          <td>082114294954</td>
+                        </tr>
+                        <tr>
+                          <td class="text-muted">Email</td>
+                          <td>:</td>
+                          <td>oki.mikael@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <td class="text-muted">Alamat</td>
+                          <td>:</td>
+                          <td>Perum Graha Timur</td>
+                        </tr>
+                        
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col">
+        <span class="span bg-info text-white">Penentuan Beasiswa</span>
+        <hr class="bg-info">
+        <div class="card-group">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Nilai Rata-rata ujian</h5>
+              <h3><div class="text-center" id="hasilujian" ></div> </h3>
+              
+              <a class="card-text" style="font-size: 16pt; font-weight:500;"> Nilai Ujian 1</a>
+              <a class="card-text" style="font-size: 16pt;margin-left: 150px; font-weight:500;"> Nilai Ujian 2</a>
+              <a class="card-text" style="font-size: 16pt;margin-left: 70px; font-weight:500;"> Nilai Ujian Praktek</a><br>
+              <a style="margin-left: 60px;" id="ujiantertulis1"></a>
+              <a style="margin-left: 220px;" id="ujiantertulis2"></a>
+              <a style="margin-left: 200px;" id="ujianpraktek"></a>
+            </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Score TOEFL</h5>
+              <h3><div class="text-center" id="toefl1"></div></h3>
+              <br><div class="text-center"> Nilai </div>
+              <div class="text-center" id="toefl"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Beasiswa</h5>
+              <div class="text-center" id="beasiswa"></div>
+              <br><div class="text-center"> Nilai </div>
+              <div class="text-center" id="nilai"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src='bootsrap/js/jquery.js'></script>
+  <script src='bootsrap/js/bootstrap.js'></script>
+  <script src='bootsrap/js/popper.js'></script>
 </body>
+
 </html>
